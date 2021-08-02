@@ -1,0 +1,60 @@
+<!-- Still not fully responsive, please open in new tab-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Hoque | About </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <h1 id="logo" onmouseover="logoHover0()" onmouseout="logoHover1()"><span class="fname">Syed</span><span id="period"></span><span class="lname">Hoque</span></h1>
+        <div class="menuButton">
+            <div class="menuButtonLines">  
+            </div>
+        </div>
+        <div class="navLinks">
+            <ul class="navLinks1">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Favorite Music</a></li>
+                <li><a href="#">Favorite Show</a></li>
+            </ul>
+            <a href="#" class="buttonNav">
+                <button>What am I working on?</button>
+            </a>
+        </div>
+    </nav> 
+    <div class="nameForm">
+        <form>
+            <input type="text" name="firname" placeholder="Enter your first name" id="firname" value="">
+            <input id="formSubmit" type="submit" value="Submit" onmousedown="useName()">
+        </form>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 blobContainer">
+                <img class="sidImg" src="images/sid.png">
+            </div>
+            <div class="col-md-6 headerText">
+                <h1>About Me</h1>
+                <p>Hi <span id="nameInput"></span>, I'm Syed Hoque. Though I was born in Bangladesh, I've grown up in New York City for as long as I can remember. I'm 17 years old and am a rising-senior at the Bronx High School of Science. Currently, I'm involved in multiple web development projects but on my spare time I really enjoy watching T.V. shows. I hope to explore as many oppurtunities beyond the scope of web development as possible and my aspiration is to reach a senior software engineering position where I can take creative initiatives. Thank you for visiting my website!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

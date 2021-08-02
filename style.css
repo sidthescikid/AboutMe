@@ -1,0 +1,194 @@
+body {
+    background: #282a39;
+}
+nav {
+    box-sizing: border-box;
+    background: #282a39;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 10vw;
+}
+
+#logo {
+    font-size: 50px;
+    text-transform: lowercase;
+    line-height: 40px;
+}
+
+#period {
+    font-weight: 1000;
+    color: #b4a085;
+}
+
+.fname, .lname {
+    padding: 0;
+    transition: 0.9s;
+}
+
+#logo:hover .fname{
+    padding-right: 7px;
+}
+
+#logo:hover .lname{
+    padding-left: 7px;
+}
+
+nav li, button {
+    font-weight: 570;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.navLinks1 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.navLinks1 li {
+    margin: auto 0;
+    margin-right: 50px;
+    transition: 0.7s;
+    opacity: 1;
+}
+
+.navLinks1 li:hover {
+    color: #a18f75;
+}
+
+.navLinks1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buttonNav button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    background: #04396b;
+    transition: 0.5s;
+}
+
+.buttonNav button:hover {
+    background: rgb(4,57,107);
+    background: linear-gradient(90deg, rgba(4,57,107,1) 30%, rgba(161,143,117,1) 100%);
+}
+
+.buttonNav {
+    margin: auto 0;
+}
+
+.menuButton {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    text-align:start;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menuButtonLines, .menuButtonLines::before, .menuButtonLines::after {
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.menuButtonLines::before, .menuButtonLines::after {
+    content: "";
+    position: absolute;
+}
+
+.menuButtonLines::before {
+    transform: translateY(-10px);
+}
+
+.menuButtonLines::after {
+    transform: translateY(10px);
+}
+
+.menuButton.open .menuButtonLines {
+    transform: translateX(10px);
+    background-color: transparent;
+}
+
+.menuButton.open .menuButtonLines::before {
+    transform: rotate(45deg) translate(-20px, 20px);
+}
+
+.menuButton.open .menuButtonLines::after {
+    transform: rotate(-45deg) translate(-20px, -20px);
+}
+
+/* form */
+
+form {
+    background: rgb(40,42,57);
+    background: linear-gradient(90deg, rgba(40,42,57,1) 0%, rgba(11,16,55,1) 100%);
+    padding: 10px;
+    text-align: center;
+}
+
+form input {
+    border-radius: 20px;
+    padding: 7px;
+}
+
+/* header */ 
+
+.sidImg {
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+.headerText {
+    color: white;
+    text-align: right;
+    padding: 40px;
+}
+
+.headerText h1 {
+    font-size: 10rem;
+    text-transform: lowercase;
+}
+
+.headerText p {
+    font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .sidImg {
+        width: 700px;
+        height: 700px;
+    }
+    .headerText {
+        padding-top: 0;
+    }
+    .headerText h1 {
+        line-height: 120px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .headerText p {
+        text-align: left;
+    }
+  }
+
+  
